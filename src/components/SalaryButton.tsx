@@ -8,9 +8,10 @@ interface props{
 
 const SalaryButton = ({clickHandler, salary} : props) => {
   console.log("Salary button", salary);
+  console.log("dddd")
   return (
     <Button onClick = {clickHandler} type = "primary" style = {{margin: 2}}>Increment Salary Button</Button>
   )
 }
 
-export default React.memo(SalaryButton);
+export default SalaryButton;
